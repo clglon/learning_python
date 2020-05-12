@@ -49,19 +49,16 @@ print("Std. dev:", sd_mean_formatted)
 # sort the list and then average the two middle values since even nubmer list?
 sorted_data = sorted(data)
 
-# method 1 - blunt, direct, not universal
-median_sum = (sorted_data[4] + sorted_data[5])/2
-print(median_sum)
-
-# method 2 - ability to calculate the median if more values are added to list
+# able to calculate the median if more values are added to list
 if count%2 == 0:
     left = int(count/2 - 1)
     right = int(count/2)
     median_sum = (sorted_data[left] + sorted_data[right])/2
-    print(median_sum)
+    print("Median", median_sum)
 else:
     middle = int((count/2) + 0.5)
-    print = sorted_data[middle]
+    print("Median", sorted_data[middle])
+
 
 
 """
